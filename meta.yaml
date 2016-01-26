@@ -1,0 +1,25 @@
+package:
+  name: lightning
+  version: "0.1"
+
+source:
+  git_rev: 6cdcb209044fd911a4b105473ed2668d1bd1ab57
+  git_url: https://github.com/mblondel/lightning.git
+
+requirements:
+  build:
+    - python
+    - setuptools
+    - numpy
+    - cython
+  run:
+    - python
+
+test:
+  imports:
+    - lightning
+
+about:
+  home: https://github.com/mblondel/lightning
+  license: BSD
+  license_file: LICENSE
